@@ -53,6 +53,7 @@
         <Reference Include="System.Reflection.Metadata">
           <HintPath>..\packages\System.Reflection.Metadata.1.6.0\lib\netstandard2.0\System.Reflection.Metadata.dll</HintPath>
         </Reference>
+        <Reference Include="netstandard" />
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
@@ -216,7 +217,7 @@
             <BuildStampFile>$(IntermediateOutputPath)BuildStamp.cs</BuildStampFile>
         </PropertyGroup>
 
-        <WriteLinesToFile File="$(BuildStampFile)" Overwrite="true" WriteOnlyWhenDifferent="true"
+        <WriteLinesToFile File="$(BuildStampFile)" Overwrite="true"
                           Lines="namespace WandEnhancer { internal static class BuildStamp { public const string Value = &quot;$(BuildStamp)&quot;%3B } }" />
 
         <ItemGroup>
